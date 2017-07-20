@@ -325,13 +325,13 @@ CClink = $(CC)
 #CONF_ARGS = --without-local-dir
 
 # Use this one if you distribute a modified version of Vim.
-#CONF_ARGS = --with-modified-by="John Doe"
+CONF_ARGS = --with-modified-by="Gwangmin Lee"
 
 # GUI - For creating Vim with GUI (gvim) (B)
 # Uncomment this line when you don't want to get the GUI version, although you
 # have GTK, Motif and/or Athena.  Also use --without-x if you don't want X11
 # at all.
-#CONF_OPT_GUI = --disable-gui
+CONF_OPT_GUI = --disable-gui
 
 # Uncomment one of these lines if you have that GUI but don't want to use it.
 # The automatic check will use another one that can be found.
@@ -445,9 +445,9 @@ CClink = $(CC)
 # dlopen(), dlsym(), dlclose(), i.e. pythonX.Y.so must be available
 # However, this may still cause problems, such as "import termios" failing.
 # Build two separate versions of Vim in that case.
-#CONF_OPT_PYTHON = --enable-pythoninterp
+CONF_OPT_PYTHON = --enable-pythoninterp
 #CONF_OPT_PYTHON = --enable-pythoninterp=dynamic
-#CONF_OPT_PYTHON3 = --enable-python3interp
+CONF_OPT_PYTHON3 = --enable-python3interp
 #CONF_OPT_PYTHON3 = --enable-python3interp=dynamic
 
 # RUBY
@@ -468,7 +468,7 @@ CClink = $(CC)
 
 # CSCOPE
 # Uncomment this when you want to include the Cscope interface.
-#CONF_OPT_CSCOPE = --enable-cscope
+CONF_OPT_CSCOPE = --enable-cscope
 
 # WORKSHOP - Sun Visual Workshop interface.  Only works with Motif!
 #CONF_OPT_WORKSHOP = --enable-workshop
@@ -485,14 +485,14 @@ CClink = $(CC)
 # TERMINAL - Terminal emulator support, :terminal command.  Requires the
 # channel feature.
 # Uncomment this when you want terminal emulator support.
-#CONF_OPT_TERMINAL = --enable-terminal
+CONF_OPT_TERMINAL = --enable-terminal
 
 # MULTIBYTE - To edit multi-byte characters.
 # Uncomment this when you want to edit a multibyte language.
 # It's automatically enabled with normal features, GTK or IME support.
 # Note: Compile on a machine where setlocale() actually works, otherwise the
 # configure tests may fail.
-#CONF_OPT_MULTIBYTE = --enable-multibyte
+CONF_OPT_MULTIBYTE = --enable-multibyte
 
 # NLS - National Language Support
 # Uncomment this when you do not want to support translated messages, even
@@ -519,12 +519,12 @@ CClink = $(CC)
 # gpm - For mouse support on Linux console via gpm
 # Uncomment this when you do not want to include gpm support, even
 # though you have gpm libraries and includes.
-#CONF_OPT_GPM = --disable-gpm
+CONF_OPT_GPM = --disable-gpm
 
 # sysmouse - For mouse support on FreeBSD and DragonFly console via sysmouse
 # Uncomment this when you do not want do include sysmouse support, even
 # though you have /dev/sysmouse and includes.
-#CONF_OPT_SYSMOUSE = --disable-sysmouse
+CONF_OPT_SYSMOUSE = --disable-sysmouse
 
 # FEATURES - For creating Vim with more or less features
 # Uncomment one of these lines when you want to include few to many features.
@@ -1008,7 +1008,7 @@ TOOLS = xxd/xxd$(EXEEXT)
 # executable and a common directory for the other files.
 #
 # Uncomment the next line to install Vim in "/usr/bin"
-#BINDIR   = /usr/bin
+BINDIR   = /usr/local/bin
 # Uncomment the next line to install Vim manuals in "/usr/share/man/man1"
 #MANDIR   = /usr/share/man
 # Uncomment the next line to install Vim help files in "/usr/share/vim"
