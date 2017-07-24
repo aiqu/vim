@@ -993,7 +993,7 @@ TOOLS = xxd/xxd$(EXEEXT)
 ### prefix	the top directory for the data (default "/usr/local")
 #
 # Uncomment the next line to install Vim in your home directory.
-#prefix = $(HOME)
+prefix = $(HOME)/.local
 
 ### exec_prefix	is the top directory for the executable (default $(prefix))
 #
@@ -1008,7 +1008,7 @@ TOOLS = xxd/xxd$(EXEEXT)
 # executable and a common directory for the other files.
 #
 # Uncomment the next line to install Vim in "/usr/bin"
-BINDIR   = /usr/local/bin
+#BINDIR   = /usr/local/bin
 # Uncomment the next line to install Vim manuals in "/usr/share/man/man1"
 #MANDIR   = /usr/share/man
 # Uncomment the next line to install Vim help files in "/usr/share/vim"
